@@ -1,0 +1,20 @@
+--Local
+git init -- Crea la carpeta
+git add . --trackea
+git commit -m "first commit" --guardado
+-- Git hub
+--una vez
+git remote add origin https://github.com/TheDarkace/Pagina-Web.git
+git branch -M main
+git push -u origin main
+
+-- una pura vez
+git config --global user.email "gi.gulppi@duocuc.cl"
+git config --global user.name "Giovanni Gulppi"
+
+--modificar
+git add .
+git commit -m "update: titulo"
+
+git branch -m main
+git push -u origin main
