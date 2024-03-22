@@ -18,3 +18,4 @@ git commit -m "update: titulo"
 
 git branch -m main
 git push -u origin main
+git clone https://github.com/TheDarkace/Pagina-Web.git

@@ -19,6 +19,11 @@ a {
     color: red;
 }
 
+ul{
+    list-style: none;
+    
+}
+
 /*header*/
 header{
     position: absolute;
@@ -26,8 +31,9 @@ header{
     left: 0;
     width: 100%;
     z-index: 10;
+
     /*flex*/
-    display: -webkit-flex
+    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -39,7 +45,7 @@ header{
 
 header nav{
     /*flex*/
-    display: -webkit-flex
+    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -87,7 +93,10 @@ header nav li{
     height: 100%;
     background-size: cover;
     width: 3000px;
-    height: 600px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
 
 }
 
@@ -103,3 +112,178 @@ header nav li{
     opacity: .5;
 }
 
+@medio(max-width:600px){
+    .banner h1{
+
+        font-size: 65px;
+    }
+    
+    .banner h2{
+        font-size: 30px;
+    }
+    
+    .banner a.banner-tbn{
+        font-size 15px
+        padding: 15px 30px;
+
+    }
+}
+/*secciones*/
+section{
+    /*Flex*/
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: colum;
+    padding: 100px;
+}
+
+
+@media (max-width: 700px){
+    section{
+        padding: 100px 50px;
+    }
+}
+
+/*Gojo*/
+.gojo-contenido{
+    /*Flex*/
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: colum;
+    padding: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gojo-titulo{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.gojo-contenido li{
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+}
+
+.gojo-izq{
+    background-image: url(../img/Gojo-logo.jpg);
+    flex-basis: 40%;
+}
+.gojo-der{
+    flex-basis: 60%;
+}
+
+.tanjiro-titulo{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.tanjiro-contenido li{
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+}
+
+.tanjiro-izq{
+    background-image: url(../img/Gojo-logo.jpg);
+    flex-basis: 40%;
+}
+.tanjiro-der{
+    flex-basis: 60%;
+}
+
+.tanjiro-contenido p{
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.tanjiro-contenido h2{
+    margin-bottom: 2%;
+}
+
+.tanjiro-tbn{
+    text-transform: uppercase;
+    background-color: red;
+    padding: 15 px 30px;
+    border-radius: 50px;
+}
+
+@media (max-width: 700px){
+    .tanjiro-izq, .tanjiro-izq {
+
+       flex-basis: 100%;
+
+    }
+    
+}
+
+/*tanjiro*/
+
+.tanjiro{
+    background-color: red;
+}
+
+.tanjiro-contenido{
+    /*Flex*/
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: colum;
+}
+
+.tanjiro-contenido li{
+    flex-basis: 33%;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.tanjiro-titulo{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.tanjiro-contenido li h4{
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+@media (max-width: 700px){
+    .tanjiro-contenido li{
+        flex-basis: 100;
+        margin-bottom: 60px;
+    }
+
+    .tanjiro-contenido li p{
+        text-align: justify;
+    }
+}
+
+/*footer*/
+footer{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: colum;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 60px 0;
+}
